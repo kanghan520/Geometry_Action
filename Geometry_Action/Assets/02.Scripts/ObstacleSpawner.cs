@@ -40,7 +40,7 @@ public class ObstacleSpawner : MonoBehaviour
     void SpawnObstacle()
     {
         // 장애물의 Y 높이를 고정해서 생성
-        Vector3 spawnPosition = new Vector3(transform.position.x, -1f, 0);
+        Vector3 spawnPosition = new Vector3(transform.position.x, -0.5f, 0);
         Instantiate(obstaclePrefab, spawnPosition, Quaternion.identity);
     }
 }
